@@ -21,7 +21,6 @@ class ShoppingTable extends DataManager {
 			)),
 			new Entity\DateField ('SHOPPING_DATE', array(
 				"required" => true,
-				"default_value" => 'date("Y-m-d")',
 				"title" => 'Дата покупки'
 			)),
 			new Entity\IntegerField ('SHOP_ID', array(

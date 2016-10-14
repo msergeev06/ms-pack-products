@@ -13,7 +13,12 @@ Config::addConfig($packageNameToUpper.'_PUBLIC_ROOT',Config::getConfig('PUBLIC_R
 //Config::addConfig($packageNameToUpper.'_TOOLS_ROOT',str_replace(Config::getConfig("SITE_ROOT"),"",Config::getConfig('PACKAGES_ROOT').$packageName."/tools/"));
 
 //***** Tables ********
-Loader::includeFiles(Config::getConfig($packageNameToUpper.'_ROOT')."tables/");
+Loader::includeFiles(
+	Config::getConfig($packageNameToUpper.'_ROOT')."tables/",
+	array(
+		"categories.php"
+	)
+);
 
 //***** Lib ********
 //Loader::includeFiles(Config::getConfig($packageNameToUpper.'_ROOT')."lib/");
